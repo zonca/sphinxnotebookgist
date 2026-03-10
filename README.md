@@ -37,3 +37,9 @@ Run a focused suite with `pytest tests/test_unit.py` or `pytest tests/test_integ
 ## Contributing
 
 Contributor workflow, coding style, and test expectations are documented in [`AGENTS.md`](AGENTS.md).
+
+## Further Reading
+
+Background and motivation for this extension, including a comparison with `nbsphinx`, are in this post:
+
+<https://www.zonca.dev/posts/2026-03-10-sphinxnotebookgist-executed-notebooks>
