@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sphinxnotebookgist"
+version = "0.1.0"
+description = "Sphinx extension that fetches executed Jupyter notebooks and validates/replaces empty source notebooks"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+    "sphinx>=5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-mock>=3.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["sphinxnotebookgist*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
